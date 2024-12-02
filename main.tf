@@ -22,5 +22,5 @@ module "prowler" {
   account_ids = var.account_ids
   security_account_id = var.security_account_id
   use_nat_gateway = false
-  # schedule_expression = "cron(*/5 * * * ? *)"
+  # schedule_expression = "cron(*/15 * * * ? *)" # Uncomment this to run the scan every 15 minutes or schedule a cron job with the desired schedule
 }
